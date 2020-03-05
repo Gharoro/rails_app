@@ -56,13 +56,20 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
+    bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.1)
+    clearance (1.15.1)
+      bcrypt
+      email_validator (~> 1.4)
+      rails (>= 3.1)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
+    email_validator (1.6.0)
+      activemodel
     erubi (1.9.0)
     ffi (1.12.2-x64-mingw32)
     globalid (0.4.2)
@@ -166,6 +173,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  clearance (~> 1.15.1)
   jbuilder (~> 2.7)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
